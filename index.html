@@ -525,20 +525,25 @@
             </li>
           </ul>
         </div>
-<!--підписка на розсилку-->
-<div class="subscription-container">
-  <p class="subscription-text">підпишіться на розсилку</p>
-  <form class="subscription-form">
-  <input type="email" name="email" class="subscription-input" placeholder="E-mail">
-<button type="submit" class="subscription-button"><span class="subscription-button-text">Підписатися</span> 
-  <svg width="24px" height="24px" class="send-icon">
-<use href="./images/icons.svg.svg#icon-icon-send"></use>
-  </svg>
-</button>
-  </form>
-</div>
 
-
+        <!--підписка на розсилку-->
+        <div class="subscription-container">
+          <p class="subscription-text">підпишіться на розсилку</p>
+          <form class="subscription-form">
+            <input
+              type="email"
+              name="email"
+              class="subscription-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscription-button">
+              <span class="subscription-button-text">Підписатися</span>
+              <svg width="24px" height="24px" class="send-icon">
+                <use href="./images/icons.svg.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- бекдроп і модальне вікно -->
@@ -552,70 +557,77 @@
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <!--Форма-->
         <form class="form">
-        <!--ім'я-->
-      <div class="form-field-container">
-          <label class="form-field">Ім'я
-            <input
-              type="text"
-              name="name"
-              autofocus
-              placeholder=" "
-              class="form-input"
-            />
-        <svg class="icon" width="18px" height="18px">
-          <use href="./images/icons.svg.svg#icon-person-black"></use>
-        </svg>
-          </label>
+          <!--ім'я-->
+          <div class="form-field-container">
+            <label class="form-field"
+              >Ім'я
+              <input
+                type="text"
+                name="name"
+                autofocus
+                placeholder=" "
+                class="form-input"
+              />
+              <svg class="icon" width="18px" height="18px">
+                <use href="./images/icons.svg.svg#icon-person-black"></use>
+              </svg>
+            </label>
           </div>
 
           <!--Телефон-->
           <div class="form-field-container">
-          <label class="form-field">Телефон
-            <input type="tel" name="tel" class="form-input" placeholder=" " />
-            <svg class="icon" width="18px" height="18px">
-              <use href="./images/icons.svg.svg#icon-phone-black"></use>
-            </svg>
-          </label>
+            <label class="form-field"
+              >Телефон
+              <input type="tel" name="tel" class="form-input" placeholder=" " />
+              <svg class="icon" width="18px" height="18px">
+                <use href="./images/icons.svg.svg#icon-phone-black"></use>
+              </svg>
+            </label>
           </div>
 
           <!--Пошта-->
           <div class="form-field-container">
-          <label class="form-field">Пошта
-            <input
-              type="email"
-              name="mail"
-              autocomplete="on"
-              class="form-input"
-              placeholder=" "/>
+            <label class="form-field"
+              >Пошта
+              <input
+                type="email"
+                name="mail"
+                autocomplete="on"
+                class="form-input"
+                placeholder=" "
+              />
               <svg class="icon" width="18px" height="18px">
                 <use href="./images/icons.svg.svg#icon-email-black"></use>
               </svg>
-          </label>
+            </label>
           </div>
-        <!--коментар-->
-          <label class="form-field">Залиште коментар
+          <!--коментар-->
+          <label class="form-field"
+            >Залиште коментар
             <textarea
               name="comment"
               id="comment"
               rows="10"
               class="comment"
-              placeholder="Введіть текст"></textarea>
+              placeholder="Введіть текст"
+            ></textarea>
           </label>
 
-
-<div class="checkbox-field">
-  <input type="checkbox" class="checkbox" name="policy" id="policy">
-<svg width="16px" height="15px" class="checkbox-icon">
-  <use href="./images/icons.svg.svg#icon-icon-check"></use>
-</svg>
-  <label class="checkbox-label" for="policy">
-    Погоджуюсь з розсилкою та приймаю <a class="policy-link" href="#">Умови договору</a></label>
-</div>
-<div>
-<button class="button form-button" type="submit">Відправити</button>
-</div>
-</form>
-</div>
+          <div class="checkbox-field">
+            <input type="checkbox" class="checkbox" name="policy" id="policy" />
+            <svg width="16px" height="15px" class="checkbox-icon">
+              <use href="./images/icons.svg.svg#icon-icon-check"></use>
+            </svg>
+            <label class="checkbox-label" for="policy">
+              Погоджуюсь з розсилкою та приймаю
+              <a class="policy-link" href="#">Умови договору</a></label
+            >
+          </div>
+          <div>
+            <button class="button form-button" type="submit">Відправити</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
