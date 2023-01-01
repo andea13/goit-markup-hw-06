@@ -530,12 +530,9 @@
         <div class="subscription-container">
           <p class="subscription-text">підпишіться на розсилку</p>
           <form class="subscription-form">
-            <input
-              type="email"
-              name="email"
-              class="subscription-input"
-              placeholder="E-mail"
-            />
+            <label class="subscription-label">
+              <input type="email" name="email" class="subscription-input" placeholder="E-mail"/>
+            </label>
             <button type="submit" class="subscription-button">
               <span class="subscription-button-text">Підписатися</span>
               <svg width="24px" height="24px" class="send-icon">
@@ -560,7 +557,7 @@
           <!--ім'я-->
           <div class="form-field-container">
             <label class="form-field"
-              >Ім'я
+              > <span class="label-text">Ім'я</span>
               <input
                 type="text"
                 name="name"
@@ -577,7 +574,7 @@
           <!--Телефон-->
           <div class="form-field-container">
             <label class="form-field"
-              >Телефон
+              ><span class="label-text">Телефон</span>
               <input type="tel" name="tel" class="form-input" placeholder=" " />
               <svg class="icon" width="18px" height="18px">
                 <use href="./images/icons.svg.svg#icon-phone-black"></use>
@@ -588,7 +585,7 @@
           <!--Пошта-->
           <div class="form-field-container">
             <label class="form-field"
-              >Пошта
+              ><span class="label-text">Пошта</span>
               <input
                 type="email"
                 name="mail"
@@ -601,9 +598,10 @@
               </svg>
             </label>
           </div>
+
           <!--коментар-->
-          <label class="form-field"
-            >Залиште коментар
+          <label class="form-field comment-label">
+            <span class="label-text">Коментар</span>
             <textarea
               name="comment"
               id="comment"
@@ -623,9 +621,7 @@
               <a class="policy-link" href="#">Умови договору</a></label
             >
           </div>
-          <div>
-            <button class="button form-button" type="submit">Відправити</button>
-          </div>
+          <button class="button form-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
