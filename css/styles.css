@@ -232,7 +232,7 @@ margin-left: 50px;
   padding-bottom: 0;
 }
 
-.hero {
+.section-hero {
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -242,18 +242,18 @@ margin-left: 50px;
   background-color: var(--hero-background-color);
   height: 600px;
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.hero-title {
+.section-hero--title {
   display: block;
   margin-top: 0;
-  margin-right: auto;
   margin-bottom: 30px;
+  margin-right: auto;
   margin-left: auto;
   max-width: 696px;
   color: var(--primary-button-color);
@@ -271,12 +271,38 @@ margin-left: 50px;
   font-family: inherit;
 }
 
-/* секція 1 */
-.section.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.section-hero--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 4px;
+  padding: 10px 24px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 200px;
+  max-height: 50px;
+  color: var(--primary-button-color);
+  background-color: var(--accent-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color var(--transition-time-main) var(--time-function);
 }
 
+.section-hero--button:hover,
+.section-hero--button:focus {
+  background-color: var(--component-active-color);
+}
+
+/* секція 1 */
 .section-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -311,36 +337,6 @@ margin-left: 50px;
   text-align: center;
 }
 
-.primary-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  border-radius: 4px;
-  padding: 10px 24px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 200px;
-  max-height: 50px;
-  color: var(--primary-button-color);
-  background-color: var(--accent-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-
-  transition: background-color var(--transition-time-main) var(--time-function);
-}
-
-.primary-button:hover,
-.primary-button:focus {
-  background-color: var(--component-active-color);
-}
 
 .section-features {
   padding-bottom: 0;
