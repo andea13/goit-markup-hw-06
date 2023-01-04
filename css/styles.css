@@ -74,7 +74,7 @@ button {
   margin-left: auto;
 }
 
-.container.header {
+.container--header {
   display: flex;
   align-items: center;
   max-width: 1200px;
@@ -90,7 +90,7 @@ button {
   align-items: center;
 }
 
-.logo-header {
+.main-nav--logo-header {
   padding-top: 24px;
   padding-bottom: 25px;
   color: var(--logo-color);
@@ -101,7 +101,7 @@ button {
   text-align: left;
 }
 
-.logo-part {
+.main-nav--logo-label {
   margin-top: 24px;
   margin-bottom: 25px;
   color: var(--accent-color);
@@ -130,11 +130,11 @@ margin-right: 50px;
 margin-left: 50px;
 } */
 
-.site-nav > .item:not(:last-child) {
+.site-nav--item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav--link {
   display: block;
   width: 100%;
   padding-top: 32px;
@@ -148,12 +148,12 @@ margin-left: 50px;
   transition: color var(--transition-time-main) var(--time-function);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav--link:hover,
+.site-nav--link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav--link--current {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -162,7 +162,7 @@ margin-left: 50px;
 
 /* нижнє підкреслення */
 
-.site-nav .link.current::after {
+.site-nav--link--current::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -176,30 +176,30 @@ margin-left: 50px;
   transition: opacity var(--transition-time-main) var(--time-function);
 }
 
-.contacts {
+.contacts-nav {
   display: flex;
   margin-left: auto;
 }
 
-.contacts > .item + .item {
+.contacts-nav--item + .contacts-nav--item {
   margin-left: 40px;
 }
 
-.contacts.item {
+.contacts-nav--item {
   margin-left: auto;
 }
 
-.contact-icon {
+.contacts-nav--icon {
   height: 100%;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contact-icon:nth-child(2) {
+.contacts-nav--icon:nth-child(2) {
   padding-left: 30px;
 }
 
-.contacts .link {
+.contacts-nav--link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,8 +214,8 @@ margin-left: 50px;
   transition: color var(--transition-time-main) var(--time-function);
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-nav--link:hover,
+.contacts-nav--link:focus {
   color: var(--accent-color);
 }
 
