@@ -302,8 +302,8 @@ margin-left: 50px;
   background-color: var(--component-active-color);
 }
 
-/* секція 1 */
-.section-title {
+/* section 1 */
+.section--title {
   margin-top: 0;
   margin-bottom: 0;
   color: var(--section-title-color);
@@ -379,7 +379,7 @@ margin-left: 50px;
   gap: 30px;
 }
 
-.feature-item {
+.features-list--item {
   max-width: 270px;
   flex-basis: calc((100% - 90px) / 4);
 }
